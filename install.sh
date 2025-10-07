@@ -10,6 +10,7 @@ echo "🚀 Starting dotfiles setup..."
 # --- /etc configs ---
 if [ "$EUID" -ne 0 ]; then
     echo "⚠️  Linking /etc configs requires sudo privileges"
+    sudo rm -rf /etc/fish /etc/starship /etc/tmux /etc/tmux.conf
     sudo stow -d $DOTFILES_DIR -t /etc etc
     sudo ln -s /etc/tmux/tmux.conf /etc/tmux.conf
     sudo git clone https://github.com/tmux-plugins/tpm /etc/tmux/plugins/tpm
