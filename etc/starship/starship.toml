@@ -1,0 +1,84 @@
+add_newline = false
+
+# A minimal left prompt
+format = """$custom$python$character"""
+
+# Move the rest of the prompt to the right
+right_format = """$status$git_branch$git_status$directory"""
+
+[username]
+format = '\[[$output]($style)\] '
+show_always = true
+
+# Root, special user, and default glyph colors (semantic)
+[custom.orbi7sync]
+command = 'echo "󰑱"'
+when = '[[ "$USER" == "orbi7sync" ]]'
+#format = '\[[ $output ]($style)\] '
+format = '[ $output  ]($style)'
+style = '#3378B5'   # blue (info/normal user) #6198c9
+shell = ['bash']
+
+[custom.root]
+command = 'echo "󰑱"'
+when = '[[ "$USER" == "root" ]]'
+#format = '\[[ $output ]($style)\] '
+format = '[ $output  ]($style)'
+style = '#E06C75'   # red (danger/root)
+shell = ['bash']
+
+[custom.default]
+command = 'echo "󰑱"'
+when = '[[ "$USER" != "root" && "$USER" != "orbi7sync" ]]'
+#format = '\[[ $output ]($style)\]'
+format = '[ $output  ]($style)'
+style = '#E5C07B'   # yellow (default user)
+shell = ['bash']
+
+[character]
+success_symbol = "[❯](#A8E19D)[❯](#E5C07B)[❯](#3378B5)"
+error_symbol = "[❯](#E06C75)[❯](#FFD68A)[❯](#56B6C2)"
+vicmd_symbol = "[❮](#A8E19D)[❮](#E5C07B)[❮](#C19FF2)"
+
+[git_branch]
+format = '[$branch]($style) '
+style = 'bold #A8E19D'  # green (success/status OK)
+
+[python]
+format = '[(\($virtualenv\) )]($style)'
+style = '#D7D3E0'  # foreground (neutral text)
+
+[git_status]
+format = '$all_status$ahead_behind '
+ahead = '[⬆](#C19FF2) '
+behind = '[⬇](#C19FF2) '
+staged = '[✚](#A8E19D) '
+deleted = '[✖](#E06C75) '
+renamed = '[➜](#C19FF2) '
+stashed = '[✭](#56B6C2) '
+untracked = '[◼](#D7D3E0) '
+modified = '[✱](#3378B5) '
+conflicted = '[═](#E5C07B) '
+diverged = '⇕ '
+up_to_date = ''
+
+[directory]
+style = "#C19FF2"
+truncation_length = 1
+truncation_symbol = ""
+read_only = " "
+truncate_to_repo = false
+home_symbol = "󰑱"
+
+[cmd_duration]
+format = '[$duration]($style) '
+style = '#FFD68A'  # soft bright yellow for visibility
+
+[line_break]
+disabled = true
+
+[status]
+disabled = false
+symbol = '✘ '
+style = '#E06C75'  # error indicator red
+

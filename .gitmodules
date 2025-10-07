@@ -1,0 +1,15 @@
+[submodule "etc/tmux/plugins/tpm"]
+	path = etc/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "etc/tmux/plugins/tmux-sensible"]
+	path = etc/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "etc/tmux/plugins/tmux-online-status"]
+	path = etc/tmux/plugins/tmux-online-status
+	url = https://github.com/tmux-plugins/tmux-online-status.git
+[submodule "etc/tmux/plugins/tmux-battery"]
+	path = etc/tmux/plugins/tmux-battery
+	url = https://github.com/tmux-plugins/tmux-battery.git
+[submodule "etc/tmux/plugins/vim-tmux-navigator"]
+	path = etc/tmux/plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
