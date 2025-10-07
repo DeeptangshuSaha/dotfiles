@@ -11,6 +11,7 @@ echo "🚀 Starting dotfiles setup..."
 if [ "$EUID" -ne 0 ]; then
     echo "⚠️  Linking /etc configs requires sudo privileges"
     sudo stow -d $DOTFILES_DIR -t /etc etc
+    sudo ln -s /etc/tmux/tmux.conf /etc/tmux.conf
     sudo git clone https://github.com/tmux-plugins/tpm /etc/tmux/plugins/tpm
 else
     stow -d $DOTFILES_DIR -t /etc etc
