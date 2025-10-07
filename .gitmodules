@@ -13,3 +13,42 @@
 [submodule "etc/tmux/plugins/vim-tmux-navigator"]
 	path = etc/tmux/plugins/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule ".local/share/nvim/site/pack/packer/start/fd"]
+	path = .local/share/nvim/site/pack/packer/start/fd
+	url = https://github.com/sharkdp/fd.git
+[submodule ".local/share/nvim/site/pack/packer/start/lualine.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim.git
+[submodule ".local/share/nvim/site/pack/packer/start/nerdtree"]
+	path = .local/share/nvim/site/pack/packer/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule ".local/share/nvim/site/pack/packer/start/nerdtree-git-plugin"]
+	path = .local/share/nvim/site/pack/packer/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule ".local/share/nvim/site/pack/packer/start/nvim-treesitter"]
+	path = .local/share/nvim/site/pack/packer/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule ".local/share/nvim/site/pack/packer/start/nvim-web-devicons"]
+	path = .local/share/nvim/site/pack/packer/start/nvim-web-devicons
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
+[submodule ".local/share/nvim/site/pack/packer/start/packer.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/packer.nvim
+	url = https://github.com/wbthomason/packer.nvim.git
+[submodule ".local/share/nvim/site/pack/packer/start/plenary.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule ".local/share/nvim/site/pack/packer/start/ripgrep"]
+	path = .local/share/nvim/site/pack/packer/start/ripgrep
+	url = https://github.com/BurntSushi/ripgrep.git
+[submodule ".local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim
+	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim.git
+[submodule ".local/share/nvim/site/pack/packer/start/telescope.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule ".local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight"]
+	path = .local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule ".local/share/nvim/site/pack/packer/start/vim-tmux-navigator"]
+	path = .local/share/nvim/site/pack/packer/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
